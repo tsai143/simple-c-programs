@@ -1,0 +1,30 @@
+import java.io.*;
+class bitwise 
+{
+	  public static void main(String args[]) 
+ 	  {
+		   DataInputStream obj=new DataInputStream(System.in);  
+		   try 
+		   {  
+			  int a,b;
+			  System.out.println("enter 2 Numbers"); 
+			  a=Integer.parseInt(obj.readLine());   
+			  b=Integer.parseInt(obj.readLine());
+		                       int c=a|b;  
+			  int d=a&b; 
+		                       int e=a^b; 
+			  int g=a&(~b);    
+			  int f=(~a&b)|(a&~b);   
+			  System.out.println("result of a|b= "+c);   
+			  System.out.println("result of a&b= "+d);  
+			  System.out.println("result of a^b= "+e);  
+			  System.out.println("result of a&(~b)= "+g); 
+   			  System.out.println("result of (~a&b)|(a&~b)= "+f); 
+		  }  
+		  catch(Exception a) 
+		  { 
+			   System.out.println("errors!!!!"); 
+		  } 
+	 }
+ } 
+ 

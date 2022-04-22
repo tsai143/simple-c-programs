@@ -1,0 +1,24 @@
+import java.io.*;
+class factorial
+{
+	public static void main(String args[])
+{	
+
+	int x=args.length;
+	int num,i;
+	long fact;
+	for(i=0;i<x;i++)
+	{
+		num=Integer.parseInt(args[i]);
+		fact=1;
+		while(num>0)
+		{
+                                                fact=fact*num;
+                                                num--;
+                                            }
+                                                 System.out.print("the factorial of" +args[i]+"is:"+fact);
+
+
+	}
+}
+}
